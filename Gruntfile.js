@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         concat: {
             options: {
-                separator: ';'
+                separator: ';\n'
             },
             vendor: {
                 src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/storm/Storm.js'],
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         },
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
+                banner: '\n/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
                 mangle: true
             },
             dist: {
