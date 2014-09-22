@@ -33,7 +33,7 @@ $(function() {
     $('#click_click_click_click_click').on('click', function(e) {
         e.preventDefault();
         var href = $(this).attr('href');
-        var cats = new Storm({ object: $('<img />').attr('src', 'img/nyan.gif') });
+        var cats = new Storm({ object: $('<img />').attr('src', 'img/nyan.gif'), spawners: 32, minDelay: 50 });
         cats.start();
         window.setTimeout(function() {
             window.location = href;
