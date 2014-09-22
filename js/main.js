@@ -32,8 +32,9 @@ $(function() {
     });
     $('#click_click_click_click_click').on('click', function(e) {
         e.preventDefault();
-        var href = $(this).attr('href');
+        var href = $(this).css('color', '#fff').attr('href');
         var cats = new Storm({ object: $('<img />').attr('src', 'img/nyan.gif'), spawners: 32, minDelay: 50 });
+        $('body').css('background-color', '#1c4170');
         cats.start();
         window.setTimeout(function() {
             window.location = href;
