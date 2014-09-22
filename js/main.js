@@ -23,7 +23,7 @@ $(function() {
         'needs a job',
         'つ ◕_◕ ༽つ'
     ];
-    $('#man_why_you_even_got_to_do_a_thing').on('mouseover', function() {
+    $('#man_why_you_even_got_to_do_a_thing').on('mouseenter', function() {
         $('#fuck_yes_i_am_awesome').hide();
         $('#anticipa___________________tion').text(words[rand(0, words.length - 1)]).show();
     }).on('mouseleave', function() {
