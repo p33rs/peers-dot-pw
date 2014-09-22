@@ -1,0 +1,15 @@
+{
+  "name": "p33rs-peers.dot.pw",
+  "version": "0.0.0",
+  "homepage": "http://peers.pw",
+  "authors": [
+    "p33rs <jon@peers.pw>"
+  ],
+  "description": "worst website",
+  "main": "index.php",
+  "directory": "js/vendor",
+  "dependencies": {
+    "storm": "git://github.com/p33rs/storm.git",
+    "jquery": "git://github.com/jquery/jquery.git"
+  }
+}
