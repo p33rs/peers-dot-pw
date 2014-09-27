@@ -26,3 +26,14 @@ body {
     color: #000000;
     text-decoration: none;
 }
+.seizure{
+    color: #ff00ff;
+    font-family: "comic sans", "comic sans ms", cursive, sans-serif;
+    text-align: center;
+    line-height: .8em;
+    font-weight: bold;
+    font-size: 2em;
+}
+.seizure.seized {
+    color: #00ff00;
+}
