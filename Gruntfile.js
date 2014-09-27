@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                 separator: ';\n'
             },
             vendor: {
-                src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/storm/Storm.js'],
+                src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/horse/dist/horse.min.js'],
                 dest: 'public/js/vendor.js'
             },
             dist: {
@@ -18,7 +18,8 @@ module.exports = function(grunt) {
         uglify: {
             options: {
                 banner: '\n/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
-                mangle: true
+                mangle: true,
+                ascii_only: true
             },
             dist: {
                 files: {

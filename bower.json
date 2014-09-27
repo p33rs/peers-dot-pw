@@ -9,7 +9,7 @@
   "main": "index.php",
   "directory": "js/vendor",
   "dependencies": {
-    "storm": "git://github.com/p33rs/storm.git",
+    "horse": "git://github.com/p33rs/horse-js.git",
     "jquery": "git://github.com/jquery/jquery.git"
   }
 }
