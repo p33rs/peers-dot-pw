@@ -26,6 +26,7 @@ WorstWebsite.prototype.bind = function() {
 WorstWebsite.prototype.swapText = function(e) {
     if (e.type === 'mouseenter') {
         $('#fuck_yes_i_am_awesome').hide();
+
         $('#anticipa___________________tion').text(
             this.words[this.rand(0, this.words.length - 1)]
         ).show();
@@ -40,7 +41,7 @@ WorstWebsite.prototype.rand = function(min, max) {
     if (min > max) {
         throw new RangeError('requested invalid range');
     }
-    return Math.floor(Math.random() * (max - min)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 WorstWebsite.prototype.yesyesyesyesyes = function(e) {
     e.preventDefault();
