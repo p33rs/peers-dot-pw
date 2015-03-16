@@ -45,14 +45,19 @@ WorstWebsite.prototype.rand = function(min, max) {
 };
 WorstWebsite.prototype.yesyesyesyesyes = function(e) {
     e.preventDefault();
-    this.catStorm().seizure();
+    this.catStorm().seizure().curse();
     $('body').css('background-color', '#1c4170');
     window.setTimeout(function() {
         window.location = $(e.currentTarget).css('color', '#fff').attr('href');
     }, 2000)
 };
+WorstWebsite.prototype.curse = function() {
+    this.cursor = new Cursor();
+    this.cursor.start();
+    return this;
+}
 WorstWebsite.prototype.catStorm = function() {
-    this.cats = new Storm({ object: $('<img />').attr('src', 'img/nyan.gif'), spawners: 32, minDelay: 50 });
+    this.cats = new Storm({ object: $('<img />').attr('src', 'img/nyan.gif'), minDelay: 10, maxDelay: 40 });
     this.cats.start();
     return this;
 };
