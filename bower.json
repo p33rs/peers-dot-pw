@@ -8,7 +8,7 @@
   "description": "worst website",
   "main": "index.php",
   "dependencies": {
-    "horse": "git://github.com/p33rs/horse-js.git",
+    "horse": "git://github.com/nicktacular/horse-js.git",
     "jquery": "git://github.com/jquery/jquery.git"
   }
 }
